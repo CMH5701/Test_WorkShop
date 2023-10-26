@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="main_content">
+	<div class="main_headline">
+		<h1>당신의 <br> 개발자 <br> 타입은?</h1>
+	</div>
+	<!-- min 변경사항 -->
+	<!-- startTest url로 연결 -->
+	<a class="startBtn" href="{% url 'startTest' %}">테스트 시작하기</a>
+	<div class="anchor_about">
+		<div class="about_workshop">
+			<p>본 테스트는 2023 성공회대학교<br> 소프트웨어공학과 워크샵 팀 빌딩을<br>위해 만들어진 테스트입니다.</p>
+		</div>
+		<a class="aboutBtn" href="{% url 'introduce' %}">
+			<span>워크샵 더 알아보기 →</span>
+		</a>
+	</div>
+</div>
+
+{% endblock %}
